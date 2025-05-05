@@ -10,6 +10,8 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarTrigger,
+  useSidebar,
 } from "./ui/sidebar";
 import { Home, SettingsIcon, User } from "lucide-react";
 import Link from "next/link";
@@ -51,54 +53,59 @@ const links = [
 ];
 
 export default function AppSidebar() {
+  const { isMobile } = useSidebar();
+
   return (
-    <Sidebar>
-      <SidebarHeader>
-        <div className="flex flex-col items-center w-full">
-          <AvatarCard />
-        </div>
-      </SidebarHeader>
-      <SidebarContent>
-        <div className="flex flex-col items-center w-full gap-5">
-          <SidebarGroup>
-            <div className="flex mx-auto gap-4">
-              {links.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-700 transition-colors"
-                >
-                  {item.icon}
-                </a>
-              ))}
-            </div>
-          </SidebarGroup>
-          <Separator />
-          <SidebarGroup>
-            <SidebarMenu>
-              <div className="flex flex-col mx-auto">
-                {items.map((item) => (
-                  <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild>
-                      <Link href={item.url}>
-                        <item.icon />
-                        <span>{item.title}</span>
-                      </Link>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
+    <>
+      <Sidebar>
+        <SidebarHeader>
+          <div className="flex flex-col items-center w-full">
+            <AvatarCard />
+          </div>
+        </SidebarHeader>
+        <SidebarContent>
+          <div className="flex flex-col items-center w-full gap-5">
+            <SidebarGroup>
+              <div className="flex mx-auto gap-4">
+                {links.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-700 transition-colors"
+                  >
+                    {item.icon}
+                  </a>
                 ))}
               </div>
-            </SidebarMenu>
-          </SidebarGroup>
-        </div>
-      </SidebarContent>
-      <SidebarFooter>
-        <div className="mx-auto">
-          <Switch onToggle={() => {}} />
-        </div>
-      </SidebarFooter>
-    </Sidebar>
+            </SidebarGroup>
+            <Separator />
+            <SidebarGroup>
+              <SidebarMenu>
+                <div className="flex flex-col mx-auto">
+                  {items.map((item) => (
+                    <SidebarMenuItem key={item.title}>
+                      <SidebarMenuButton asChild>
+                        <Link href={item.url}>
+                          <item.icon />
+                          <span>{item.title}</span>
+                        </Link>
+                      </SidebarMenuButton>
+                    </SidebarMenuItem>
+                  ))}
+                </div>
+              </SidebarMenu>
+            </SidebarGroup>
+          </div>
+        </SidebarContent>
+        <SidebarFooter>
+          <div className="mx-auto">
+            <Switch onToggle={() => {}} />
+          </div>
+        </SidebarFooter>
+      </Sidebar>
+      {isMobile && <SidebarTrigger />}
+    </>
   );
 }
