@@ -11,10 +11,12 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "./ui/sidebar";
-import { DockIcon, Home, SettingsIcon, User } from "lucide-react";
+import { Home, SettingsIcon, User } from "lucide-react";
 import Link from "next/link";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Switch } from "./ui/switch";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import AvatarCard from "./avatar-card";
+import { Separator } from "./ui/separator";
 
 // Menu items.
 const items = [
@@ -29,14 +31,22 @@ const items = [
     icon: User,
   },
   {
-    title: "Resume",
-    url: "/resume",
-    icon: DockIcon,
-  },
-  {
     title: "Projects",
     url: "/projects",
     icon: SettingsIcon,
+  },
+];
+
+const links = [
+  {
+    name: "linkedIn",
+    url: "https://linkedin.com/in/prayag-k",
+    icon: <FaLinkedin className="w-5 h-5" />,
+  },
+  {
+    name: "github",
+    url: "https://github.com/prayagk",
+    icon: <FaGithub className="w-5 h-5" />,
   },
 ];
 
@@ -44,29 +54,50 @@ export default function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
-        <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>PK</AvatarFallback>
-        </Avatar>
+        <div className="flex flex-col items-center w-full">
+          <AvatarCard />
+        </div>
       </SidebarHeader>
       <SidebarContent>
-        <SidebarGroup>
-          <SidebarMenu>
-            {items.map((item) => (
-              <SidebarMenuItem key={item.title}>
-                <SidebarMenuButton asChild>
-                  <Link href={item.url}>
-                    <item.icon />
-                    <span>{item.title}</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            ))}
-          </SidebarMenu>
-        </SidebarGroup>
+        <div className="flex flex-col items-center w-full gap-5">
+          <SidebarGroup>
+            <div className="flex mx-auto gap-4">
+              {links.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-700 transition-colors"
+                >
+                  {item.icon}
+                </a>
+              ))}
+            </div>
+          </SidebarGroup>
+          <Separator />
+          <SidebarGroup>
+            <SidebarMenu>
+              <div className="flex flex-col mx-auto">
+                {items.map((item) => (
+                  <SidebarMenuItem key={item.title}>
+                    <SidebarMenuButton asChild>
+                      <Link href={item.url}>
+                        <item.icon />
+                        <span>{item.title}</span>
+                      </Link>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                ))}
+              </div>
+            </SidebarMenu>
+          </SidebarGroup>
+        </div>
       </SidebarContent>
       <SidebarFooter>
-        <Switch onToggle={() => {}} />
+        <div className="mx-auto">
+          <Switch onToggle={() => {}} />
+        </div>
       </SidebarFooter>
     </Sidebar>
   );
