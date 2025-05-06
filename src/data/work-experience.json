@@ -1,0 +1,30 @@
+[
+  {
+    "company": "Harman",
+    "role": "Senior Front-end Engineer",
+    "period": "Nov 2022 - Present",
+    "tech": ["React", "Remix", "TypeScript", "JavaScript", "Tailwind CSS"]
+  },
+  {
+    "company": "Quest Global",
+    "role": "Senior Software Engineer",
+    "period": "Feb 2021 - Nov 2022",
+    "tech": ["React", "MobX", "Plotly.js", "D3.js"]
+  },
+  {
+    "company": "Cybrosys Technologies",
+    "role": "Blockchain Developer",
+    "period": "Aug 2017 - Feb 2021",
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Ethereum",
+      "Hyperledger Fabric",
+      "Solidity",
+      "Web3.js",
+      "Python",
+      "Solidity"
+    ]
+  }
+]

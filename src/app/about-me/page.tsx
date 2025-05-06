@@ -112,11 +112,11 @@ export default function AboutMe() {
         <CareerTimeline />
       </div>
 
-      <div className="px-10">
+      {/* <div className="px-10">
         <div className="mb-2">
           <h4 className="text-2xl font-bold">Projects</h4>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

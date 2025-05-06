@@ -1,35 +1,15 @@
-// components/CareerTimeline.tsx
-"use client";
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import { WorkExperience } from "@/types/work-experience";
+import timeline from "@/data/work-experience.json";
 
-const timeline = [
-  {
-    company: "Harman",
-    role: "Senior Front-end Engineer",
-    period: "Nov 2022 - till now",
-    tech: ["React", "Remix", "TypeScript"],
-  },
-  {
-    company: "Quest Global",
-    role: "Senior Software Engineer",
-    period: "Feb 2021 - Nov 2022",
-    tech: ["React", "Redux", "Chart.js"],
-  },
-  {
-    company: "Cybrosys",
-    role: "Blockchain Developer",
-    period: "Jun 2019 - Jan 2021",
-    tech: ["Python", "Solidity"],
-  },
-];
+const typedTimeline: WorkExperience[] = timeline;
 
 export function CareerTimeline() {
   return (
-    <div className="border-l-2 border-gray-300 pl-6 space-y-5">
-      {timeline.map((item, idx) => (
+    <div className="space-y-5">
+      {typedTimeline.map((item, idx) => (
         <motion.div
           key={idx}
           initial={{ opacity: 0, y: 30 }}

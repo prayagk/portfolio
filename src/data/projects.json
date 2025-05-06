@@ -32,8 +32,8 @@
       "Zustand",
       "vite"
     ],
-    "github": "https://github.com/prayagk/linear-regression",
-    "demo": "https://prayagk.github.io/linear-regression",
+    "github": "https://github.com/prayagk/binary-classification",
+    "demo": "",
     "image": "/images/binary-classification.png",
     "altText": "Binary classification banner image"
   },
@@ -48,5 +48,17 @@
     "demo": "https://prayagk.dev",
     "image": "/images/portfolio.png",
     "altText": "Portfolio Website banner image"
+  },
+  {
+    "title": "Fire Homes",
+    "slug": "firehomes",
+    "ongoing": true,
+    "description": "A real estate marketplace built with Next.js and Firebase. Features include user authentication, property listings, filtering, and more. Built as part of a hands-on Udemy project.",
+    "shortDescription": "Real estate app built with Next.js and Firebase.",
+    "tech": ["Next.js", "Firebase", "Tailwind", "Vercel"],
+    "github": "https://github.com/prayagk/fire-homes",
+    "demo": "",
+    "image": "/images/fire-homes.png",
+    "altText": "Fire Homes banner image"
   }
 ]

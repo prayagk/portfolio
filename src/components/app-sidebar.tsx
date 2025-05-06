@@ -15,8 +15,8 @@ import {
 } from "./ui/sidebar";
 import { Home, SettingsIcon, User } from "lucide-react";
 import Link from "next/link";
-import { Switch } from "./ui/switch";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+// import { Switch } from "./ui/switch";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import AvatarCard from "./avatar-card";
 import { Separator } from "./ui/separator";
 
@@ -50,6 +50,11 @@ const links = [
     url: "https://github.com/prayagk",
     icon: <FaGithub className="w-5 h-5" />,
   },
+  {
+    name: "email",
+    url: "mailto:hello@prayagk.dev",
+    icon: <FaEnvelope className="w-5 h-5" />,
+  },
 ];
 
 export default function AppSidebar() {
@@ -57,7 +62,7 @@ export default function AppSidebar() {
 
   return (
     <>
-      <Sidebar>
+      <Sidebar collapsible="offcanvas">
         <SidebarHeader>
           <div className="flex flex-col items-center w-full">
             <AvatarCard />
@@ -83,13 +88,13 @@ export default function AppSidebar() {
             <Separator />
             <SidebarGroup>
               <SidebarMenu>
-                <div className="flex flex-col mx-auto">
+                <div className="flex flex-col mx-auto gap-3">
                   {items.map((item) => (
                     <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild>
                         <Link href={item.url}>
                           <item.icon />
-                          <span>{item.title}</span>
+                          <span className="text-lg">{item.title}</span>
                         </Link>
                       </SidebarMenuButton>
                     </SidebarMenuItem>
@@ -100,9 +105,7 @@ export default function AppSidebar() {
           </div>
         </SidebarContent>
         <SidebarFooter>
-          <div className="mx-auto">
-            <Switch onToggle={() => {}} />
-          </div>
+          <div className="mx-auto">{/* <Switch onToggle={() => {}} /> */}</div>
         </SidebarFooter>
       </Sidebar>
       {isMobile && <SidebarTrigger />}
