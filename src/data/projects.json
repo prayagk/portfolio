@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Linear Regression using TensorFlow.js",
+    "slug": "linear-regression",
+    "ongoing": false,
+    "shortDescription": "Predicts house prices from living space using TensorFlow.js in the browser.",
+    "description": "A browser-based house price predictor built with TensorFlow.js and React. It uses linear regression to estimate prices from square footage, with an interactive UI and real-time visualization.",
+    "tech": [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "TensorFlow.js",
+      "Zustand",
+      "vite"
+    ],
+    "github": "https://github.com/prayagk/linear-regression",
+    "demo": "https://prayagk.github.io/linear-regression",
+    "image": "/images/linear-regression.png",
+    "altText": "Linear regression banner image"
+  },
+  {
+    "title": "Binary Classification using TensorFlow.js",
+    "slug": "binary-classification",
+    "ongoing": true,
+    "shortDescription": "Classifies input into two groups based on living space size.",
+    "description": "A work-in-progress browser-based binary classification model using TensorFlow.js. Currently building the UI and training logic to classify input data into two categories in real time.",
+    "tech": [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "TensorFlow.js",
+      "Zustand",
+      "vite"
+    ],
+    "github": "https://github.com/prayagk/linear-regression",
+    "demo": "https://prayagk.github.io/linear-regression",
+    "image": "/images/binary-classification.png",
+    "altText": "Binary classification banner image"
+  },
+  {
+    "title": "Portfolio Website",
+    "slug": "portfolio",
+    "ongoing": true,
+    "description": "A personal site where I share my projects, background, and what I enjoy building. It’s a space to explore my work, see what I’ve been up to, and get a feel for my frontend journey.",
+    "shortDescription": "My personal site showcasing my work and background.",
+    "tech": ["Next.js", "Tailwind", "Vercel"],
+    "github": "https://github.com/prayagk/portfolio",
+    "demo": "https://prayagk.dev",
+    "image": "/images/portfolio.png",
+    "altText": "Portfolio Website banner image"
+  }
+]
