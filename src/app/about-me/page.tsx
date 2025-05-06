@@ -1,69 +1,10 @@
 import { CareerTimeline } from "@/components/career-timeline";
 import { Badge } from "@/components/ui/badge";
+import { Skill } from "@/types/skill";
 import React from "react";
+import skills from "@/data/skills.json";
 
-const skills: { name: string; percentage: number; description: string }[] = [
-  {
-    name: "Javascript",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "TypeScript",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "React",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Next.js",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Remix",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Redux",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Tailwind CSS",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Jest",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "React Testing Library",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Node.js",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Mongodb",
-    percentage: 100,
-    description: "",
-  },
-  {
-    name: "Express.js",
-    percentage: 100,
-    description: "",
-  },
-];
+const typedSkills: Skill[] = skills;
 export default function AboutMe() {
   return (
     <div className="flex flex-col gap-5">
@@ -92,7 +33,7 @@ export default function AboutMe() {
           <h4 className="text-2xl font-bold">Skills</h4>
         </div>
         <div className="flex flex-wrap gap-2">
-          {skills.map((skill) => (
+          {typedSkills.map((skill) => (
             // <HoverCard key={skill.name}>
             //   <HoverCardTrigger>
             //     <div className="border-1 p-2">{skill.name} </div>

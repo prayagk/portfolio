@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Javascript",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "TypeScript",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "React",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Next.js",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Remix",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Redux",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Tailwind CSS",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Jest",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "React Testing Library",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Node.js",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Mongodb",
+    "percentage": 100,
+    "description": ""
+  },
+  {
+    "name": "Express.js",
+    "percentage": 100,
+    "description": ""
+  }
+]
