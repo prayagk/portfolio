@@ -18,6 +18,21 @@ export const metadata: Metadata = {
   title: "Prayag K - Senior Front-End Engineer (React & TS)",
   description:
     "I'm Prayag K, a senior front-end engineer specializing in React, TypeScript, and modern UI development. Explore my portfolio, projects, and experience in building scalable web apps.",
+  openGraph: {
+    title: "Prayag K - Senior Front-End Engineer",
+    description: "My personal site showcasing projects and background.",
+    url: "https://prayagk.dev",
+    siteName: "Prayag K | Portfolio",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Preview of Prayag's portfolio",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
