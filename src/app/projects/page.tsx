@@ -34,7 +34,7 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 gap-10">
           {typedProjects.map((project) => (
             <Card
-              className="flex flex-col justify-between rounded-xl md:py-6 bg-white shadow-md transition hover:shadow-[0_0_15px_rgba(34,197,94,0.6)] hover:scale-102 duration-300"
+              className="cursor-pointer flex flex-col justify-between rounded-xl md:py-6 bg-white shadow-md transition hover:shadow-[0_0_15px_rgba(34,197,94,0.6)] hover:scale-102 duration-300"
               key={project.slug}
               onClick={() => onClickHandler(project)}
             >

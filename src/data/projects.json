@@ -55,7 +55,7 @@
     "ongoing": true,
     "description": "A real estate marketplace built with Next.js and Firebase. Features include user authentication, property listings, filtering, and more. Built as part of a hands-on Udemy project.",
     "shortDescription": "Real estate app built with Next.js and Firebase.",
-    "tech": ["Next.js", "Firebase", "Tailwind", "Vercel"],
+    "tech": ["Next.js", "Firebase", "Tailwind", "Vercel", "Zod"],
     "github": "https://github.com/prayagk/fire-homes",
     "demo": "",
     "image": "/images/fire-homes.png",
