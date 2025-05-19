@@ -1,3 +1,6 @@
+import ExpertiseCard from "@/components/expertise-card";
+import { Button } from "@/components/ui/button";
+import { DownloadIcon } from "lucide-react";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -10,13 +13,23 @@ export default function Home() {
           Frontend developer. React. TypeScript. Fast UI
         </h2>
       </div>
-      <div className="flex gap-5">
-        <Link className="hover:underline" href={"/about-me"}>
-          About Me
-        </Link>
-        <Link className="hover:underline" href={"/projects"}>
-          Projects
-        </Link>
+      <div className="flex flex-col md:flex-row gap-5">
+        <Button variant="outline" asChild>
+          <Link className="hover:underline" href={"/about-me"}>
+            About Me
+          </Link>
+        </Button>
+
+        <Button variant="outline" asChild>
+          <Link className="hover:underline" href={"/projects"}>
+            View Projects
+          </Link>
+        </Button>
+        <Button variant="default" asChild>
+          <a href="/Prayag_K_Senior_Frontend_Developer_Resume.pdf" download>
+            Download My Resume <DownloadIcon />
+          </a>
+        </Button>
       </div>
       <div className="flex gap-1 ">
         <p>Reach me at</p>
@@ -24,6 +37,9 @@ export default function Home() {
           <FaEnvelope />
           <span className="underline italic">hello@prayagk.dev</span>
         </div>
+      </div>
+      <div className="flex gap-1">
+        <ExpertiseCard />
       </div>
     </div>
   );

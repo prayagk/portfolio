@@ -8,7 +8,7 @@ const typedSkills: Skill[] = skills;
 export default function AboutMe() {
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-col mx-auto p-10 bg-gray-100">
+      <div className="flex flex-col w-full mx-auto p-10 bg-gray-100">
         <div className="mb-3">
           <h2 className="text-5xl font-bold">Prayag K</h2>
           <h3 className="text-2xl mt-6 font-extralight">
@@ -16,15 +16,11 @@ export default function AboutMe() {
           </h3>
         </div>
         <div>
-          <p>
-            Experienced front-end developer with 7+ years of expertise in
-            crafting high-performance, user-friendly web applications using
-            React.js, TypeScript, and modern front-end technologies. Skilled in
-            building scalable architectures, reusable UI components, and
-            optimizing application performance for seamless user experiences.
-            Proficient in SSR frameworks like Remix and Next.js with a strong
-            focus on accessibility, responsiveness, and cross-browser
-            compatibility. Familiar with Node.js and MongoDB.
+          <p className="text-justify max-w-[585px]">
+            7+ years of front-end experience building scalable, accessible React
+            apps with reusable components andoptimized performance. Skilled in
+            Next.js, Remix, Tailwind CSS, and state management with Redux
+            andZustand. Familiar with Node.js and MongoDB.
           </p>
         </div>
       </div>
