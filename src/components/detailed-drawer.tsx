@@ -7,10 +7,11 @@ import {
   DrawerHeader,
   DrawerTitle,
 } from "@/components/ui/drawer";
-import { LinkIcon, WrenchIcon, X } from "lucide-react";
+import { LinkIcon, WrenchIcon } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { Badge } from "@/components/ui/badge";
 import { Project } from "@/types/project";
+import { Button } from "./ui/button";
 
 const DetailedDrawer = ({
   project,
@@ -85,10 +86,7 @@ const DetailedDrawer = ({
 
           <DrawerFooter>
             <DrawerClose>
-              <div className="inline-flex hover:bg-gray-200 justify-center gap-2 px-2 py-1 rounded items-center">
-                <span>Close</span>
-                <X size={18} />
-              </div>
+              <Button variant="ghost">Close</Button>
             </DrawerClose>
           </DrawerFooter>
         </DrawerContent>
