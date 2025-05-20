@@ -42,7 +42,7 @@ export default function AboutMe() {
           ))}
         </div>
       </div>
-      <div className="px-10">
+      <div className="px-10 mb-5">
         <div className="mb-2">
           <h4 className="text-2xl font-bold">Work Experience</h4>
         </div>

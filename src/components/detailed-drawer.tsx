@@ -25,7 +25,7 @@ const DetailedDrawer = ({
   return (
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
       {!!project && (
-        <DrawerContent className="px-5 md:px-20">
+        <DrawerContent className="px-5 md:px-20 2xl:max-w-7xl 2xl:mx-auto">
           <DrawerHeader className="text-center">
             <DrawerTitle>
               {project.title}{" "}
