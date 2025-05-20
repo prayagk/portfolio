@@ -48,7 +48,7 @@ export default function RootLayout({
         <SidebarProvider open>
           <AppSidebar />
 
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 bg-gray-100">{children}</main>
         </SidebarProvider>
       </body>
     </html>

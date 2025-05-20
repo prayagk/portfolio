@@ -8,7 +8,7 @@ const typedSkills: Skill[] = skills;
 export default function AboutMe() {
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-col w-full mx-auto p-10 bg-gray-100">
+      <div className="flex flex-col w-full mx-auto p-10 bg-gray-200">
         <div className="mb-3">
           <h2 className="text-5xl font-bold">Prayag K</h2>
           <h3 className="text-2xl mt-6 font-extralight">
