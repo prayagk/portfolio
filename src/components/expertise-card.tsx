@@ -16,9 +16,9 @@ const expertise = [
 export default function ExpertiseCard() {
   return (
     <div className="flex flex-col">
-      <div>
+      {/* <div>
         <h2>My expertise are in </h2>
-      </div>
+      </div> */}
       <div className="flex gap-2">
         {expertise.map((item) => (
           <Image

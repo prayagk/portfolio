@@ -7,8 +7,8 @@ import skills from "@/data/skills.json";
 const typedSkills: Skill[] = skills;
 export default function AboutMe() {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex flex-col w-full mx-auto p-10 bg-gray-200">
+    <div className="flex flex-col gap-5 bg-gray-200 h-full">
+      <div className="flex flex-col w-full mx-auto p-10 bg-gray-300">
         <div className="mb-3">
           <h2 className="text-5xl font-bold">Prayag K</h2>
           <h3 className="text-2xl mt-6 font-extralight">
@@ -16,7 +16,7 @@ export default function AboutMe() {
           </h3>
         </div>
         <div>
-          <p className="text-justify max-w-[585px]">
+          <p className="text-justify max-w-xl">
             7+ years of front-end experience building scalable, accessible React
             apps with reusable components andoptimized performance. Skilled in
             Next.js, Remix, Tailwind CSS, and state management with Redux
@@ -24,7 +24,7 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <div className="px-10 w-4/5">
+      <div className="px-10">
         <div className="mb-2">
           <h4 className="text-2xl font-bold">Skills</h4>
         </div>

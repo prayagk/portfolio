@@ -3,7 +3,14 @@
     "company": "Harman",
     "role": "Senior Front-end Engineer",
     "period": "Nov 2022 - Present",
-    "tech": ["React", "Remix", "TypeScript", "JavaScript", "Tailwind CSS"]
+    "tech": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Remix",
+      "JavaScript",
+      "Tailwind CSS"
+    ]
   },
   {
     "company": "Quest Global",

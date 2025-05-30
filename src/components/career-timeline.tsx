@@ -9,7 +9,7 @@ const typedTimeline: WorkExperience[] = timeline;
 
 export function CareerTimeline() {
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 max-w-xl">
       {typedTimeline.map((item, idx) => (
         <motion.div
           key={idx}
@@ -22,9 +22,12 @@ export function CareerTimeline() {
           {/* <span className="absolute -left-[14px] top-2 w-3 h-3 bg-primary rounded-full border-2 border-white" /> */}
           <Card>
             <CardContent>
-              <h3 className="text-lg font-semibold">
-                {item.role} @ {item.company}
-              </h3>
+              <div className="flex flex-wrap items-center">
+                <h3 className="text-base md:text-lg font-semibold">
+                  {item.role}
+                </h3>
+                <p className="text-muted-foreground sm:whitespace-pre">{` @ ${item.company}`}</p>
+              </div>
               <p className="text-sm text-muted-foreground">{item.period}</p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {item.tech.map((tech, i) => (

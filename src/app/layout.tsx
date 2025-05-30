@@ -48,7 +48,9 @@ export default function RootLayout({
         <SidebarProvider open>
           <AppSidebar />
 
-          <main className="flex-1 bg-gray-100">{children}</main>
+          <main className="flex-1 bg-gray-100 flex justify-center">
+            <div className="w-full 2xl:max-w-7xl">{children}</div>
+          </main>
         </SidebarProvider>
       </body>
     </html>

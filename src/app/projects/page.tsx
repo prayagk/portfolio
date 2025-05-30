@@ -31,10 +31,10 @@ export default function Projects() {
         <div>
           <h2 className="text-center text-3xl font-bold">Projects</h2>
         </div>
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-5 w-full max-w-3xl mx-auto">
           {typedProjects.map((project) => (
             <Card
-              className="cursor-pointer flex flex-col justify-between rounded-xl md:py-6 bg-white shadow-md transition hover:shadow-[0_0_15px_rgba(0,128,128,0.6)] hover:scale-102 duration-300"
+              className="cursor-pointer flex flex-col rounded-xl md:py-6 bg-white shadow-md transition hover:shadow-[0_0_15px_rgba(0,128,128,0.6)] hover:scale-102 duration-300"
               key={project.slug}
               onClick={() => onClickHandler(project)}
             >
@@ -42,7 +42,7 @@ export default function Projects() {
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>
                   <div className="flex gap-3 my-3">
-                    <div className="flex-1 text-justify">
+                    <div className="flex-1 text-left md:text-justify ">
                       {project.shortDescription}
                     </div>
                     <div className="relative w-1/3 md:w-1/4 aspect-square">
