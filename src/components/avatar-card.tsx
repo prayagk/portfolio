@@ -5,7 +5,11 @@ export default function AvatarCard() {
   return (
     <div className="mx-10 mt-10 mb-5 flex flex-col gap-2">
       <Avatar className=" h-36 w-36">
-        <AvatarImage sizes="100px" src="/images/avatar.png" />
+        <AvatarImage
+          alt="Avatar Image"
+          sizes="100px"
+          src="/images/avatar-min.png"
+        />
         <AvatarFallback>PK</AvatarFallback>
       </Avatar>
       <div className="flex">
