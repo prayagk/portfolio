@@ -87,8 +87,8 @@ export default function AppSidebar() {
             </SidebarGroup>
             <Separator />
             <SidebarGroup>
-              <SidebarMenu>
-                <div className="flex flex-col mx-auto gap-3">
+              <div className="flex flex-col mx-auto">
+                <SidebarMenu className="gap-3">
                   {items.map((item) => (
                     <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild>
@@ -99,8 +99,8 @@ export default function AppSidebar() {
                       </SidebarMenuButton>
                     </SidebarMenuItem>
                   ))}
-                </div>
-              </SidebarMenu>
+                </SidebarMenu>
+              </div>
             </SidebarGroup>
           </div>
         </SidebarContent>

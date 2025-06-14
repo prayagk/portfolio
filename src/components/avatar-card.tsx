@@ -7,8 +7,8 @@ export default function AvatarCard() {
       <Avatar className=" h-36 w-36">
         <AvatarImage
           alt="Avatar Image"
-          sizes="100px"
-          src="/images/avatar-min.png"
+          sizes="144px"
+          src="/images/avatar-min.webp"
         />
         <AvatarFallback>PK</AvatarFallback>
       </Avatar>
