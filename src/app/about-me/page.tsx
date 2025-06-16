@@ -19,8 +19,8 @@ export default function AboutMe() {
           <p className="text-justify max-w-xl">
             7+ years of front-end experience building scalable, accessible React
             apps with reusable components andoptimized performance. Skilled in
-            Next.js, Remix, Tailwind CSS, and state management with Redux
-            andZustand. Familiar with Node.js and MongoDB.
+            Next.js, Remix, Tailwind CSS, and state management with Redux and
+            Zustand. Familiar with Node.js and MongoDB.
           </p>
         </div>
       </div>
