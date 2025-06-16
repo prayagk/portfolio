@@ -41,7 +41,7 @@
     "title": "Portfolio Website",
     "slug": "portfolio",
     "ongoing": true,
-    "description": "A personal site where I share my works and background. Yep, this website itself! I experiment with new features here, and I got a long list of TODOs. So yeah, probably a \"WIP forever\"",
+    "description": "A personal site where I share my works and background. Yep, this website itself! I experiment with new features here, and I got a long list of TODOs. So yeah, probably a \"WIP forever\".",
     "shortDescription": "My personal site showcasing my work and background.",
     "tech": ["Next.js", "Tailwind", "Vercel"],
     "github": "https://github.com/prayagk/portfolio",
