@@ -42,16 +42,19 @@ const items = [
 const links = [
   {
     name: "linkedIn",
+    ariaLabel: "LinkedIn Link",
     url: "https://linkedin.com/in/prayag-k",
     icon: <FaLinkedin className="w-5 h-5" />,
   },
   {
     name: "github",
+    ariaLabel: "GitHub Link",
     url: "https://github.com/prayagk",
     icon: <FaGithub className="w-5 h-5" />,
   },
   {
     name: "email",
+    ariaLabel: "Email",
     url: "mailto:hello@prayagk.dev",
     icon: <FaEnvelope className="w-5 h-5" />,
   },
@@ -62,11 +65,11 @@ export default function AppSidebar() {
 
   return (
     <>
-      <Sidebar collapsible="offcanvas">
-        <SidebarHeader>
-          <div className="flex flex-col items-center w-full">
+      <Sidebar role="navigation" collapsible="offcanvas">
+        <SidebarHeader className="flex flex-col items-center w-full">
+          <Link href={"/"}>
             <AvatarCard />
-          </div>
+          </Link>
         </SidebarHeader>
         <SidebarContent>
           <div className="flex flex-col items-center w-full gap-5">
@@ -74,6 +77,7 @@ export default function AppSidebar() {
               <div className="flex mx-auto gap-4">
                 {links.map((item) => (
                   <a
+                    aria-label={item.ariaLabel}
                     key={item.name}
                     href={item.url}
                     target="_blank"

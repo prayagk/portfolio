@@ -10,10 +10,10 @@ export default function AboutMe() {
     <div className="flex flex-col gap-5 bg-gray-200 h-full">
       <div className="flex flex-col w-full mx-auto p-10 bg-gray-300">
         <div className="mb-3">
-          <h2 className="text-5xl font-bold">Prayag K</h2>
-          <h3 className="text-2xl mt-6 font-extralight">
+          <h1 className="text-5xl font-bold">Prayag K</h1>
+          <h2 className="text-2xl mt-6 font-extralight">
             Senior front-end engineer
-          </h3>
+          </h2>
         </div>
         <div>
           <p className="text-justify max-w-xl">
@@ -26,7 +26,7 @@ export default function AboutMe() {
       </div>
       <div className="px-10">
         <div className="mb-2">
-          <h4 className="text-2xl font-bold">Skills</h4>
+          <h3 className="text-2xl font-bold">Skills</h3>
         </div>
         <div className="flex flex-wrap gap-2">
           {typedSkills.map((skill) => (
@@ -44,7 +44,7 @@ export default function AboutMe() {
       </div>
       <div className="px-10 mb-5">
         <div className="mb-2">
-          <h4 className="text-2xl font-bold">Work Experience</h4>
+          <h3 className="text-2xl font-bold">Work Experience</h3>
         </div>
         <CareerTimeline />
       </div>

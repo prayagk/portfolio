@@ -29,7 +29,7 @@ export default function Projects() {
     <>
       <div className="flex flex-col p-10 gap-10">
         <div>
-          <h2 className="text-center text-3xl font-bold">Projects</h2>
+          <h1 className="text-center text-3xl font-bold">Projects</h1>
         </div>
         <div className="grid md:grid-cols-2 gap-5 w-full max-w-3xl mx-auto">
           {typedProjects.map((project) => (
