@@ -11,7 +11,6 @@ import { LinkIcon, WrenchIcon } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { Badge } from "@/components/ui/badge";
 import { Project } from "@/types/project";
-import { Button } from "./ui/button";
 
 const DetailedDrawer = ({
   project,
@@ -85,9 +84,7 @@ const DetailedDrawer = ({
           </div>
 
           <DrawerFooter>
-            <DrawerClose>
-              <Button variant="ghost">Close</Button>
-            </DrawerClose>
+            <DrawerClose>Close</DrawerClose>
           </DrawerFooter>
         </DrawerContent>
       )}

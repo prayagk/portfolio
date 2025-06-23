@@ -61,7 +61,8 @@ const links = [
 ];
 
 export default function AppSidebar() {
-  const { isMobile } = useSidebar();
+  const { isMobile, setOpenMobile } = useSidebar();
+  const closeToggle = () => setOpenMobile(false);
 
   return (
     <>
@@ -96,7 +97,7 @@ export default function AppSidebar() {
                   {items.map((item) => (
                     <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild>
-                        <Link href={item.url}>
+                        <Link onClick={closeToggle} href={item.url}>
                           <item.icon />
                           <span className="text-lg">{item.title}</span>
                         </Link>
