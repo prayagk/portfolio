@@ -3,7 +3,7 @@ import withBundleAnalyzer from "@next/bundle-analyzer";
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline';
+  script-src 'self' 'unsafe-inline' https://cloud.umami.is/script.js;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   img-src 'self';
   font-src 'self' https://fonts.gstatic.com;
