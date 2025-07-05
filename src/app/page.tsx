@@ -4,6 +4,14 @@ import { DownloadIcon } from "lucide-react";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
+declare global {
+  interface Window {
+    umami?: {
+      track: (event: string) => void;
+    };
+  }
+}
+
 export default function Home() {
   return (
     <div className="flex flex-col w-full h-full items-center justify-center gap-2">
@@ -26,7 +34,11 @@ export default function Home() {
           </Link>
         </Button>
         <Button variant="default" asChild>
-          <a href="/Prayag_K_Senior_Frontend_Developer_Resume.pdf" download>
+          <a
+            href="/Prayag_K_Senior_Frontend_Developer_Resume.pdf"
+            download
+            onClick={() => window.umami?.track("download_resume")}
+          >
             Download My Resume <DownloadIcon />
           </a>
         </Button>
