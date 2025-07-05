@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AppSidebar from "@/components/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="ec6a13e1-6eba-4bad-8950-b3cdc3ed3518"
+          strategy="afterInteractive"
+        ></Script>
         <SidebarProvider open>
           <AppSidebar />
 
