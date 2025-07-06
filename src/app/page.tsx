@@ -1,16 +1,8 @@
+import DownloadResume from "@/components/download-resume";
 import ExpertiseCard from "@/components/expertise-card";
 import { Button } from "@/components/ui/button";
-import { DownloadIcon } from "lucide-react";
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
-
-declare global {
-  interface Window {
-    umami?: {
-      track: (event: string) => void;
-    };
-  }
-}
 
 export default function Home() {
   return (
@@ -33,15 +25,7 @@ export default function Home() {
             View Projects
           </Link>
         </Button>
-        <Button variant="default" asChild>
-          <a
-            href="/Prayag_K_Senior_Frontend_Developer_Resume.pdf"
-            download
-            onClick={() => window.umami?.track("download_resume")}
-          >
-            Download My Resume <DownloadIcon />
-          </a>
-        </Button>
+        <DownloadResume />
       </div>
       <div className="flex gap-1 ">
         <p>Reach me at</p>
